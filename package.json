@@ -1,0 +1,46 @@
+{
+  "name": "dracula-highlighting",
+  "displayName": "Dracula Highlighting",
+  "description": "Modern dracula-highlighting themes for VSCode.",
+  "version": "0.0.1",
+  "publisher": "Mopsgamer",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Mopsgamer/dracula-highlighting.git"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Dark Modern (Dracula)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-modern-dracula.json"
+      },
+      {
+        "label": "Dark (Dracula)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/dark-dracula.json"
+      },
+      {
+        "label": "Monokai (Dracula)",
+        "uiTheme": "vs-dark",
+        "path": "./themes/monokai-dracula.json"
+      }
+    ]
+  },
+  "scripts": {
+    "prepublish": "bun run scripts/assets.js",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "sharp": "^0.34.5",
+    "vsce": "^2.15.0"
+  }
+}

@@ -1,0 +1,6 @@
+.github
+node_modules
+scripts
+.gitignore
+*.lock
+*.vsix
