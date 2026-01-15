@@ -1,0 +1,43 @@
+name: Check
+
+on:
+  pull_request:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Package extension
+        run: bun run fmt --check
+
+      - name: Package extension
+        run: bun run package
+
+      - name: Get Version
+        run: |
+          echo "VERSION=$(node -p "require('./package.json').version")" >> $GITHUB_ENV
+
+      - name: Compute PR suffix
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "PR_SUFFIX=-pr${{ github.event.number }}" >> $GITHUB_ENV
+          else
+            echo "PR_SUFFIX=" >> $GITHUB_ENV
+          fi
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vscord-${{ env.VERSION }}${{ env.PR_SUFFIX }}.vsix
+          path: dracula-highlighting-*.vsix
