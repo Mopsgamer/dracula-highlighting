@@ -6,12 +6,12 @@ Modern dracula-highlighting themes for VSCode.
 
 1. Dark Modern (Dracula)
 
-![Dark Modern (Dracula) Theme Preview](https://github.com/Mopsgamer/dracula-highlighting/blob/main/assets/dark-modern-dracula.jpg)
+![Dark Modern (Dracula) Theme Preview](https://raw.githubusercontent.com/Mopsgamer/dracula-highlighting/main/assets/dark-modern-dracula.png)
 
 2. Dark (Dracula)
 
-![Dark (Dracula) Theme Preview](https://github.com/Mopsgamer/dracula-highlighting/blob/main/assets/dark-dracula.jpg)
+![Dark (Dracula) Theme Preview](https://raw.githubusercontent.com/Mopsgamer/dracula-highlighting/main/assets/dark-dracula.png)
 
 3. Monokai (Dracula)
 
-![Dark (Dracula) Theme Preview](https://github.com/Mopsgamer/dracula-highlighting/blob/main/assets/monokai-dracula.jpg)
+![Dark (Dracula) Theme Preview](https://raw.githubusercontent.com/Mopsgamer/dracula-highlighting/main/assets/monokai-dracula.png)
