@@ -1,7 +1,7 @@
 {
 	"name": "dracula-highlighting",
 	"displayName": "Dracula Highlighting",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Modern dracula-highlighting themes for VSCode.",
 	"categories": [
 		"Themes"
@@ -38,6 +38,16 @@
 				"label": "Monokai (Dracula)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/monokai-dracula.json"
+			},
+			{
+				"label": "Monokai Dimmed (Dracula)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/monokai-dimmed-dracula.json"
+			},
+			{
+				"label": "Solarized Dark (Dracula)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/solarized-dark-dracula.json"
 			}
 		]
 	},
