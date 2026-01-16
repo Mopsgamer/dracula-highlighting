@@ -9,17 +9,24 @@ if (!fs.existsSync(outputDir)) {
 	fs.mkdirSync(outputDir, { recursive: true })
 }
 
-const files = fs.readdirSync(inputDir).filter((f) => f.endsWith(".png"))
+const files = fs
+	.readdirSync(inputDir)
+	.filter((f) => [".png", ".avif", ".webp"].some((s) => f.endsWith(s)))
 
 for (const file of files) {
 	const inputPath = path.join(inputDir, file)
-	const outputPath = path.join(outputDir, file.replace(".png", ".avif"))
+	const outputPath = path.join(outputDir, file.replace(path.extname(file), ".jpg"))
 
-	await sharp(inputPath).avif({ quality: 100 }).toFile(outputPath)
+	await sharp(inputPath).jpeg({ quality: 100 }).toFile(outputPath)
 
 	console.log(`Converted ${file}`)
-	fs.rmSync(inputPath)
-	console.log(`Removed ${file}`)
 }
+
+sharp("assets/icon.png")
+	.resize({ left: 0, top: 0, width: 128, height: 128 })
+	.jpeg({ quality: 100 })
+	.toFile("assets/icon.jpg")
+	.then(() => console.log("Image clipped!"))
+	.catch((err) => console.error(err))
 
 console.log("All images converted")
