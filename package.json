@@ -1,7 +1,7 @@
 {
 	"name": "dracula-highlighting",
 	"displayName": "Dracula Highlighting",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"description": "Modern dracula-highlighting themes for VSCode.",
 	"categories": [
 		"Themes"
@@ -14,16 +14,20 @@
 	"publisher": "Mopsgamer",
 	"scripts": {
 		"fmt": "oxfmt",
-		"prepublish": "bun run scripts/assets.js",
 		"package": "vsce package"
 	},
 	"devDependencies": {
-		"oxfmt": "^0.24.0",
+		"oxfmt": "^0.44.0",
 		"sharp": "^0.34.5",
 		"vsce": "^2.15.0"
 	},
 	"contributes": {
 		"themes": [
+			{
+				"label": "Dark 2026 (Dracula)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/dark-2026-dracula.json"
+			},
 			{
 				"label": "Dark Modern (Dracula)",
 				"uiTheme": "vs-dark",
