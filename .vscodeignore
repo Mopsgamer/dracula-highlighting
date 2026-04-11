@@ -1,6 +1,11 @@
 .github
 node_modules
 scripts
+assets
+!assets/icon.png
+.*rc
+.*rc.*
+*.js
 .gitignore
 *.lock
 *.vsix
