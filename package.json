@@ -1,7 +1,7 @@
 {
 	"name": "dracula-highlighting",
 	"displayName": "Dracula Highlighting",
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"description": "Modern dracula-highlighting themes for VSCode.",
 	"categories": [
 		"Themes"
