@@ -28,25 +28,30 @@
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark-2026-dracula.json"
 			},
+            {
+                "label": "Dark (Dracula)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/dark-dracula.json"
+            },
 			{
 				"label": "Dark Modern (Dracula)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/dark-modern-dracula.json"
 			},
 			{
-				"label": "Dark (Dracula)",
+				"label": "Kimbie Dark (Dracula)",
 				"uiTheme": "vs-dark",
-				"path": "./themes/dark-dracula.json"
+				"path": "./themes/kimbie-dark-dracula.json"
 			},
+            {
+                "label": "Monokai Dimmed (Dracula)",
+                "uiTheme": "vs-dark",
+                "path": "./themes/monokai-dimmed-dracula.json"
+            },
 			{
 				"label": "Monokai (Dracula)",
 				"uiTheme": "vs-dark",
 				"path": "./themes/monokai-dracula.json"
-			},
-			{
-				"label": "Monokai Dimmed (Dracula)",
-				"uiTheme": "vs-dark",
-				"path": "./themes/monokai-dimmed-dracula.json"
 			},
 			{
 				"label": "Solarized Dark (Dracula)",
