@@ -1,8 +1,8 @@
 {
 	"name": "dracula-highlighting",
 	"displayName": "Dracula Highlighting",
-	"version": "0.1.0",
-	"description": "Modern dracula-highlighting themes for VSCode.",
+	"version": "0.2.0",
+	"description": "Patched syntax highlighting for default themes in VSCode.",
 	"categories": [
 		"Themes"
 	],
@@ -18,11 +18,45 @@
 	},
 	"devDependencies": {
 		"oxfmt": "^0.44.0",
-		"sharp": "^0.34.5",
 		"vsce": "^2.15.0"
 	},
 	"contributes": {
 		"themes": [
+			{
+				"label": "Light 2026 (Dracula)",
+				"uiTheme": "vs",
+				"path": "./themes/light-2026-dracula.json"
+			},
+			{
+				"label": "Light Modern (Dracula)",
+				"uiTheme": "vs",
+				"path": "./themes/light-modern-dracula.json"
+			},
+			{
+				"label": "Light High Contrast (Dracula)",
+				"uiTheme": "hc-light",
+				"path": "./themes/light-high-contrast-dracula.json"
+			},
+			{
+				"label": "Light (Visual Studio, Dracula)",
+				"uiTheme": "vs",
+				"path": "./themes/light-dracula.json"
+			},
+			{
+				"label": "Quiet Light (Dracula)",
+				"uiTheme": "vs",
+				"path": "./themes/quiet-light-dracula.json"
+			},
+			{
+				"label": "Solarized Light (Dracula)",
+				"uiTheme": "vs",
+				"path": "./themes/solarized-light-dracula.json"
+			},
+			{
+				"label": "Red (Dracula)",
+				"uiTheme": "vs-dark",
+				"path": "./themes/red-dracula.json"
+			},
 			{
 				"label": "Abyss (Dracula)",
 				"uiTheme": "vs-dark",
