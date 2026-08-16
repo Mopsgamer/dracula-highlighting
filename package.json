@@ -1,7 +1,7 @@
 {
 	"name": "dracula-highlighting",
 	"displayName": "Dracula Highlighting",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Patched syntax highlighting for default themes in VSCode.",
 	"categories": [
 		"Themes"
@@ -13,11 +13,12 @@
 	},
 	"publisher": "Mopsgamer",
 	"scripts": {
+		"vscode:prepublish": "bun fmt",
 		"fmt": "oxfmt",
-		"package": "vsce package"
+		"vsix": "vsce package"
 	},
 	"devDependencies": {
-		"oxfmt": "^0.44.0",
+		"oxfmt": "^0.63.0",
 		"vsce": "^2.15.0"
 	},
 	"contributes": {

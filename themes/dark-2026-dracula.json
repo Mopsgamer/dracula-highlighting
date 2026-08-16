@@ -81,7 +81,6 @@
 		"editorCodeLens.foreground": "#8c8c8c",
 		"editorCommentsWidget.rangeActiveBackground": "#488fae46",
 		"editorCommentsWidget.rangeBackground": "#488fae26",
-		"editorCursor.foreground": "#bbbebf",
 		"editorGroup.border": "#ffffff17",
 		"editorGroupHeader.tabsBackground": "#191a1b",
 		"editorGroupHeader.tabsBorder": "#2a2b2c",
